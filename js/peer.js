@@ -10,6 +10,8 @@ binaryFeatures.useBlobBuilder = (function(){
   }
 })();
 
+//added to deploy to heroku
+
 binaryFeatures.useArrayBufferView = !binaryFeatures.useBlobBuilder && (function(){
   try {
     return (new Blob([new Uint8Array([])])).size === 0;
